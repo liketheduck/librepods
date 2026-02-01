@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Noise Cancellation -->
+    <shortcut
+        android:shortcutId="noise_cancellation_on"
+        android:shortcutShortLabel="@string/shortcut_anc_on"
+        android:enabled="true">
+        <intent
+            android:action="com.openpods.app.ACTION_NOISE_CONTROL"
+            android:targetPackage="com.openpods.app"
+            android:targetClass="com.openpods.app.VoiceCommandActivity">
+            <extra android:name="mode" android:value="noise_cancellation" />
+        </intent>
+        <capability-binding android:key="actions.intent.TOGGLE_ON">
+            <parameter-binding
+                android:key="targetDevice.name"
+                android:value="@array/noise_cancellation_synonyms" />
+        </capability-binding>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="noise_cancellation_off"
+        android:shortcutShortLabel="@string/shortcut_anc_off"
+        android:enabled="true">
+        <intent
+            android:action="com.openpods.app.ACTION_NOISE_CONTROL"
+            android:targetPackage="com.openpods.app"
+            android:targetClass="com.openpods.app.VoiceCommandActivity">
+            <extra android:name="mode" android:value="off" />
+        </intent>
+        <capability-binding android:key="actions.intent.TOGGLE_OFF">
+            <parameter-binding
+                android:key="targetDevice.name"
+                android:value="@array/noise_cancellation_synonyms" />
+        </capability-binding>
+    </shortcut>
+
+    <!-- Transparency Mode -->
+    <shortcut
+        android:shortcutId="transparency_on"
+        android:shortcutShortLabel="@string/shortcut_transparency_on"
+        android:enabled="true">
+        <intent
+            android:action="com.openpods.app.ACTION_NOISE_CONTROL"
+            android:targetPackage="com.openpods.app"
+            android:targetClass="com.openpods.app.VoiceCommandActivity">
+            <extra android:name="mode" android:value="transparency" />
+        </intent>
+        <capability-binding android:key="actions.intent.TOGGLE_ON">
+            <parameter-binding
+                android:key="targetDevice.name"
+                android:value="@array/transparency_synonyms" />
+        </capability-binding>
+    </shortcut>
+
+    <!-- Adaptive Mode -->
+    <shortcut
+        android:shortcutId="adaptive_on"
+        android:shortcutShortLabel="@string/shortcut_adaptive_on"
+        android:enabled="true">
+        <intent
+            android:action="com.openpods.app.ACTION_NOISE_CONTROL"
+            android:targetPackage="com.openpods.app"
+            android:targetClass="com.openpods.app.VoiceCommandActivity">
+            <extra android:name="mode" android:value="adaptive" />
+        </intent>
+        <capability-binding android:key="actions.intent.TOGGLE_ON">
+            <parameter-binding
+                android:key="targetDevice.name"
+                android:value="@array/adaptive_synonyms" />
+        </capability-binding>
+    </shortcut>
+
+    <!-- Conversational Awareness -->
+    <shortcut
+        android:shortcutId="conversational_awareness_on"
+        android:shortcutShortLabel="@string/shortcut_ca_on"
+        android:enabled="true">
+        <intent
+            android:action="com.openpods.app.ACTION_CONVERSATIONAL_AWARENESS"
+            android:targetPackage="com.openpods.app"
+            android:targetClass="com.openpods.app.VoiceCommandActivity">
+            <extra android:name="enabled" android:value="true" />
+        </intent>
+        <capability-binding android:key="actions.intent.TOGGLE_ON">
+            <parameter-binding
+                android:key="targetDevice.name"
+                android:value="@array/conversational_awareness_synonyms" />
+        </capability-binding>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="conversational_awareness_off"
+        android:shortcutShortLabel="@string/shortcut_ca_off"
+        android:enabled="true">
+        <intent
+            android:action="com.openpods.app.ACTION_CONVERSATIONAL_AWARENESS"
+            android:targetPackage="com.openpods.app"
+            android:targetClass="com.openpods.app.VoiceCommandActivity">
+            <extra android:name="enabled" android:value="false" />
+        </intent>
+        <capability-binding android:key="actions.intent.TOGGLE_OFF">
+            <parameter-binding
+                android:key="targetDevice.name"
+                android:value="@array/conversational_awareness_synonyms" />
+        </capability-binding>
+    </shortcut>
+
+    <!-- Check Battery -->
+    <shortcut
+        android:shortcutId="check_battery"
+        android:shortcutShortLabel="@string/shortcut_battery"
+        android:enabled="true">
+        <intent
+            android:action="com.openpods.app.ACTION_CHECK_BATTERY"
+            android:targetPackage="com.openpods.app"
+            android:targetClass="com.openpods.app.VoiceCommandActivity" />
+        <capability-binding android:key="actions.intent.GET_CHARGE_LEVEL">
+            <parameter-binding
+                android:key="device.name"
+                android:value="@array/airpods_synonyms" />
+        </capability-binding>
+    </shortcut>
+
+</shortcuts>

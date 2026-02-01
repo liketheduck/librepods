@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OpenPods</string>
+    <string name="notification_channel_name">AirPods Connection</string>
+    <string name="notification_channel_description">Shows AirPods connection status and battery</string>
+
+    <!-- Shortcut labels -->
+    <string name="shortcut_anc_on">Turn on noise cancellation</string>
+    <string name="shortcut_anc_off">Turn off noise cancellation</string>
+    <string name="shortcut_transparency_on">Turn on transparency</string>
+    <string name="shortcut_adaptive_on">Turn on adaptive mode</string>
+    <string name="shortcut_ca_on">Turn on conversational awareness</string>
+    <string name="shortcut_ca_off">Turn off conversational awareness</string>
+    <string name="shortcut_battery">Check AirPods battery</string>
+
+    <!-- Voice command responses -->
+    <string name="voice_anc_enabled">Noise cancellation enabled</string>
+    <string name="voice_transparency_enabled">Transparency mode enabled</string>
+    <string name="voice_adaptive_enabled">Adaptive mode enabled</string>
+    <string name="voice_noise_off">Noise control turned off</string>
+    <string name="voice_ca_enabled">Conversational awareness enabled</string>
+    <string name="voice_ca_disabled">Conversational awareness disabled</string>
+    <string name="voice_not_connected">AirPods not connected. Please open the app to connect.</string>
+    <string name="voice_command_failed">Failed to change AirPods settings</string>
+
+    <!-- Synonym arrays for voice recognition -->
+    <string-array name="noise_cancellation_synonyms">
+        <item>noise cancellation</item>
+        <item>noise cancelling</item>
+        <item>ANC</item>
+        <item>active noise cancellation</item>
+        <item>active noise cancelling</item>
+        <item>noise control</item>
+        <item>noise reduction</item>
+    </string-array>
+
+    <string-array name="transparency_synonyms">
+        <item>transparency</item>
+        <item>transparency mode</item>
+        <item>passthrough</item>
+        <item>pass through</item>
+        <item>hear through</item>
+        <item>ambient mode</item>
+        <item>ambient sound</item>
+    </string-array>
+
+    <string-array name="adaptive_synonyms">
+        <item>adaptive</item>
+        <item>adaptive mode</item>
+        <item>adaptive audio</item>
+        <item>adaptive transparency</item>
+        <item>smart mode</item>
+        <item>auto mode</item>
+    </string-array>
+
+    <string-array name="conversational_awareness_synonyms">
+        <item>conversational awareness</item>
+        <item>conversation awareness</item>
+        <item>conversation detection</item>
+        <item>voice detection</item>
+        <item>talk through</item>
+        <item>conversation mode</item>
+    </string-array>
+
+    <string-array name="airpods_synonyms">
+        <item>AirPods</item>
+        <item>AirPods Pro</item>
+        <item>AirPods Max</item>
+        <item>earbuds</item>
+        <item>headphones</item>
+        <item>earphones</item>
+    </string-array>
+</resources>
